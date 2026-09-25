@@ -1,1 +1,5 @@
-# Ctrl-Alt-Defeat
+Ctrl-Alt-Defeat
+
+Rune Lemmens
+Lex Renders
+Liam Wozniak
