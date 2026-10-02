@@ -427,3 +427,9 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Project-specific: downloaded/assembled datasets (too large for git)
+**/data/
+__pycache__/
+*.ipynb_checkpoints/
+.ipynb_checkpoints/

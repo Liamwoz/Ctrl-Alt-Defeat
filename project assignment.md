@@ -18,7 +18,7 @@ The dataset isn't huge, so make sure to use each row optimally. It's also quite 
 
 ## Dataset 2: NYC Citi Bike System Data
 
-[Download from citibikenyc](https://citibikenyc.com/system-data)
+[Download from citibikenyc](https://s3.amazonaws.com/tripdata/index.html)
     
 A rather large dataset of all trips using City Bikes in New York.
 
