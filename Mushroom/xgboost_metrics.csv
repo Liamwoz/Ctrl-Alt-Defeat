@@ -1,0 +1,2 @@
+model,accuracy,balanced_accuracy,poisonous_precision,poisonous_recall,poisonous_f1,roc_auc
+Tuned XGBoost,0.81,0.7714470234832744,0.8436363636363636,0.6121372031662269,0.709480122324159,0.8422027625882162

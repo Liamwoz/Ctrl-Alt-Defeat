@@ -10,6 +10,7 @@ scipy
 # Modelling and evaluation
 scikit-learn==1.4.2
 pycaret==3.3.2
+xgboost
 
 # Notebook execution
 jupyter
