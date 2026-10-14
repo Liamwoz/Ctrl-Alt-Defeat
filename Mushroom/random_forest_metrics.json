@@ -1,0 +1,36 @@
+{
+  "model":"Tuned Random Forest",
+  "accuracy":0.796,
+  "balanced_accuracy":0.7586325571,
+  "poisonous_precision":0.8091872792,
+  "poisonous_recall":0.6042216359,
+  "poisonous_f1":0.6918429003,
+  "roc_auc":0.8387569628,
+  "classification_report":{
+    "edible":{
+      "precision":0.7907949791,
+      "recall":0.9130434783,
+      "f1-score":0.8475336323,
+      "support":621.0
+    },
+    "poisonous":{
+      "precision":0.8091872792,
+      "recall":0.6042216359,
+      "f1-score":0.6918429003,
+      "support":379.0
+    },
+    "accuracy":0.796,
+    "macro avg":{
+      "precision":0.7999911291,
+      "recall":0.7586325571,
+      "f1-score":0.7696882663,
+      "support":1000.0
+    },
+    "weighted avg":{
+      "precision":0.7977656608,
+      "recall":0.796,
+      "f1-score":0.7885268449,
+      "support":1000.0
+    }
+  }
+}

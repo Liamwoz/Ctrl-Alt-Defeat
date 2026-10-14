@@ -1,0 +1,44 @@
+{
+  "model":"Tuned XGBoost",
+  "accuracy":0.81,
+  "balanced_accuracy":0.7714470235,
+  "poisonous_precision":0.8436363636,
+  "poisonous_recall":0.6121372032,
+  "poisonous_f1":0.7094801223,
+  "roc_auc":0.8422027626,
+  "best_cv_balanced_accuracy":0.7389159381,
+  "best_parameters":{
+    "model__subsample":0.8,
+    "model__n_estimators":250,
+    "model__max_depth":5,
+    "model__learning_rate":0.08,
+    "model__colsample_bytree":1.0
+  },
+  "classification_report":{
+    "edible":{
+      "precision":0.7972413793,
+      "recall":0.9307568438,
+      "f1-score":0.8588410104,
+      "support":621.0
+    },
+    "poisonous":{
+      "precision":0.8436363636,
+      "recall":0.6121372032,
+      "f1-score":0.7094801223,
+      "support":379.0
+    },
+    "accuracy":0.81,
+    "macro avg":{
+      "precision":0.8204388715,
+      "recall":0.7714470235,
+      "f1-score":0.7841605664,
+      "support":1000.0
+    },
+    "weighted avg":{
+      "precision":0.8148250784,
+      "recall":0.81,
+      "f1-score":0.8022332338,
+      "support":1000.0
+    }
+  }
+}

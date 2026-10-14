@@ -1,0 +1,2 @@
+model,accuracy,balanced_accuracy,poisonous_precision,poisonous_recall,poisonous_f1,roc_auc
+Tuned Random Forest,0.796,0.7586325570723873,0.8091872791519434,0.604221635883905,0.6918429003021148,0.8387569627675169

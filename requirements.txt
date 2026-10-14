@@ -1,0 +1,17 @@
+# Core data analysis
+numpy
+pandas
+
+# EDA and visualisation
+matplotlib
+seaborn
+scipy
+
+# Modelling and evaluation
+scikit-learn==1.4.2
+pycaret==3.3.2
+xgboost
+
+# Notebook execution
+jupyter
+ipykernel
