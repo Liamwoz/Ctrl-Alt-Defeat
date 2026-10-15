@@ -1306,11 +1306,11 @@
                 ? "MODEL 01 · CLASSIFICATION"
                 : "MODEL 02 · REGRESSION";
             document.querySelector("#input-title").textContent = isMushroom
-                ? "Build an observation"
-                : "Describe a station-day";
+                ? "Mushroom edibility predictor"
+                : "Citi Bike trip-duration predictor";
             document.querySelector("#input-description").textContent = isMushroom
-                ? "Enter the nine features used by the trained classifier."
-                : "Enter a station location, trip date and daily rider counts.";
+                ? "Predict whether a mushroom is edible or poisonous from its measured and observed traits."
+                : "Estimate the average trip duration for a station and date using daily trip and rider data.";
             document.querySelector("#result-title").textContent = isMushroom
                 ? "Mushroom classification"
                 : "Predicted trip duration";
