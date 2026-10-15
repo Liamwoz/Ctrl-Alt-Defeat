@@ -118,9 +118,29 @@ The station picker requires internet access for the live Citi Bike GBFS station 
 
 ## Hosting
 
-The API is hosted on an AWS EC2 server redirected to https through Cloudfront: https://d16mi61bdk4mg3.cloudfront.net // https://d16mi61bdk4mg3.cloudfront.net/docs
+The API runs on an AWS EC2 server and is available through CloudFront:
+[API](https://d16mi61bdk4mg3.cloudfront.net) ·
+[interactive API docs](https://d16mi61bdk4mg3.cloudfront.net/docs).
 
-Our frontend is hosted on AWS Amplify available with this URL: https://main.d6cw6ies6ycnl.amplifyapp.com
+The frontend is hosted on AWS Amplify:
+<https://main.d6cw6ies6ycnl.amplifyapp.com>.
+
+### Deploying API and model changes
+
+The GitHub Actions workflow in `.github/workflows/deploy.yml` deploys the API
+when a commit is pushed to the `main` branch. It connects to the EC2 instance,
+pulls the latest `main`, installs the dependencies into the server's `.venv`,
+and restarts the `myapi` systemd service.
+
+The API loads its model artifacts from the repository when it starts. Therefore,
+to update a model online, commit and push the replacement model file(s) to
+`main`; the deployment workflow will pull them to EC2 and restart the API so it
+loads the updated artifacts. The default artifact paths are
+`Mushroom/xgboost_final.joblib`, `NYC_Citi_Bike/citibike_model.json`, and
+`NYC_Citi_Bike/citibike_features.json`. Merely changing a model locally, or
+pushing to a branch other than `main`, does not update the hosted API. This
+workflow deploys model files that are already in the repository; it does not
+train or create new models.
 
 ## AI Usage
 
