@@ -1,5 +1,6 @@
 Ctrl-Alt-Defeat
 
+Pamela Barbosa
 Rune Lemmens
 Lex Renders
 Liam Wozniak
@@ -35,3 +36,16 @@ and `/citibike/predict`. The mushroom model is loaded from
 `citibike_model.json` and `citibike_features.json` from
 `NYC_Citi_Bike/NYC Citi Bike System Data` by default. Override their locations
 with `CITIBIKE_MODEL_PATH` and `CITIBIKE_FEATURES_PATH` if needed.
+
+## Frontend
+
+Run `main.py` as above, then serve the project root in another terminal:
+
+```powershell
+python -m http.server 3000
+```
+
+Open `http://localhost:3000`. The Citi Bike station picker uses Citi Bike's
+public GBFS station-information feed for live station names and coordinates,
+and OpenStreetMap for map tiles. An internet connection is required for the
+station feed, tiles, and Leaflet map library.
