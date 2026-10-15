@@ -21,6 +21,6 @@ jobs:
             set -e
             cd ~/Ctrl-Alt-Defeat
             git pull origin main
-            .venv/bin/pip install -r requirements.txt
+            .venv/bin/python -m pip install -r requirements.txt
             sudo systemctl restart myapi
           '
