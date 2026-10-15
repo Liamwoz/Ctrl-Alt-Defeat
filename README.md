@@ -34,7 +34,7 @@ and `/mushroom/predict/csv`. The Citi Bike endpoints are `/citibike/schema`
 and `/citibike/predict`. The mushroom model is loaded from
 `Mushroom/xgboost_final.joblib` by default. Citi Bike predictions use
 `citibike_model.json` and `citibike_features.json` from
-`NYC_Citi_Bike/NYC Citi Bike System Data` by default. Override their locations
+`NYC_Citi_Bike` by default. Override their locations
 with `CITIBIKE_MODEL_PATH` and `CITIBIKE_FEATURES_PATH` if needed.
 
 ## Frontend

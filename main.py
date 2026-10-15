@@ -49,19 +49,13 @@ CATEGORICAL_COLUMNS = [
 CITIBIKE_MODEL_PATH = Path(
     os.getenv(
         "CITIBIKE_MODEL_PATH",
-        PROJECT_ROOT
-        / "NYC_Citi_Bike"
-        / "NYC Citi Bike System Data"
-        / "citibike_model.json",
+        PROJECT_ROOT / "NYC_Citi_Bike" / "citibike_model.json",
     )
 )
 CITIBIKE_FEATURES_PATH = Path(
     os.getenv(
         "CITIBIKE_FEATURES_PATH",
-        PROJECT_ROOT
-        / "NYC_Citi_Bike"
-        / "NYC Citi Bike System Data"
-        / "citibike_features.json",
+        PROJECT_ROOT / "NYC_Citi_Bike" / "citibike_features.json",
     )
 )
 
