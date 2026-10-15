@@ -1,6 +1,7 @@
 # Core data analysis
 numpy
 pandas
+joblib
 
 # EDA and visualisation
 matplotlib
@@ -11,6 +12,15 @@ scipy
 scikit-learn==1.4.2
 pycaret==3.3.2
 xgboost
+
+# API serving
+fastapi
+uvicorn[standard]
+python-multipart
+
+# API tests
+pytest
+httpx2
 
 # Notebook execution
 jupyter
