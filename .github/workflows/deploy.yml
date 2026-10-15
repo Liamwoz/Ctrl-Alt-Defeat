@@ -1,0 +1,26 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Pull and restart
+        run: |
+          ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} '
+            set -e
+            cd ~/Ctrl-Alt-Defeat
+            git pull origin main
+            .venv/bin/pip install -r requirements.txt
+            sudo systemctl restart myapi
+          '
