@@ -121,3 +121,19 @@ The station picker requires internet access for the live Citi Bike GBFS station 
 The API is hosted on an AWS EC2 server redirected to https through Cloudfront: https://d16mi61bdk4mg3.cloudfront.net // https://d16mi61bdk4mg3.cloudfront.net/docs
 
 Our frontend is hosted on AWS Amplify available with this URL: https://main.d6cw6ies6ycnl.amplifyapp.com
+
+## AI Usage
+
+Generative AI tools were used extensively throughout this project to support development.
+
+AI was used for tasks such as:
+- brainstorming approaches
+- writing and improving code
+- debugging
+- explaining machine learning concepts
+- helping structure notebooks and documentation
+- suggesting evaluation methods and improvements
+- reviewing results and identifying possible issues
+- helping with deployment and CI/CD setup
+
+Although AI assisted with a large part of the development process, all generated code, analyses, decisions and conclusions were reviewed, tested and adjusted by the team.
